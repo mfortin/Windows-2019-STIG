@@ -972,6 +972,7 @@
   notify: reboot_windows
   when:
       - wn19_00_000320
+      - not wn19stig_is_server_core
   tags:
       - WN19-00-000320
       - CAT2
@@ -1044,6 +1045,7 @@
       state: absent
   when:
       - wn19_00_000370
+      - not wn19stig_is_server_core
   tags:
       - WN19-00-000370
       - CAT2

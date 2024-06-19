@@ -713,10 +713,10 @@
       - V-205750
 
 - name: "HIGH | WN19-UR-000060 | PATCH | Windows Server 2019 Create a token object user right must not be assigned to any groups or accounts."
-  community.windows.win_security_policy:
-      section: Privilege Rights
-      key: SeCreateTokenPrivilege
-      value: "{{ wn19stig_secreatetokenprivilege }}"
+  ansible.windows.win_user_right:
+      name: SeCreateTokenPrivilege
+      users: "{{ wn19stig_secreatetokenprivilege }}"
+      action: set
   when:
       - wn19_ur_000060
   tags:

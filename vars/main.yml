@@ -9,3 +9,6 @@ lockdown_banner: "{{lookup('file', './templates/banner.txt')}}"
 
 # This will be changed to true if discovered for cloud based systems.
 wn19stig_cloud_based_system: false
+
+# This will be changed to true if discovered for server core type.
+wn19stig_is_server_core: false
