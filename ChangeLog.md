@@ -2,6 +2,9 @@
 
 ## Release 3.0.0
 
+June 2024 Update
+ - update WN19-SO-000140 var with title fix - Thank you @rlmass
+
 August 2023 Update
   - Updated Workflows To Centralized Repo and renamed them to better run across all repos.
   - Removed Templates & PR Template from repo and adjusted to Org level.
